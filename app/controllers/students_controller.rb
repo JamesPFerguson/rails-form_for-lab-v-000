@@ -8,6 +8,7 @@ class StudentsController < ApplicationController
   end
 
   def show
+    @school_class = SchoolClass.find(params[:id])
   end
 
   def edit
